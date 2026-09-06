@@ -31,7 +31,11 @@ int main(){
         }
         printf("Wanna play again? (1 = yes/ 0 = no): ");
         scanf("%d", &again);
-    }
-    printf("thank you for playing our game!!\n");
+        while(again != 1 && again != 0){
+            printf("please enter 0 or 1: ");
+             scanf("%d", &again);
+        }
+        }
+                  printf("thank you for playing our game!!\n");
     return 0;
 }
